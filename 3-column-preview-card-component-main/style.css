@@ -1,0 +1,79 @@
+*{box-sizing: border-box;}
+body{
+    background-color:hsl(0, 0%, 95%);
+    margin:0;
+    padding:0;
+}
+h3{
+    text-transform: uppercase;
+}
+.main{
+    border-radius:6px;
+    display:flex;
+    width:100%;
+    max-width:700px;
+    margin:100px auto;
+    overflow: hidden;
+    text-align: left;
+    color:hsl(0, 0%, 95%);
+}
+.sedan{
+    background-color:hsl(31, 77%, 52%);
+    padding:50px;
+}
+.suv{
+    background-color:hsl(184, 100%, 22%);
+    padding:50px;
+}
+.luxury{
+    background-color:hsl(179, 100%, 13%);
+    padding:50px;
+}
+.btn{
+    border-radius: 50px;
+    background-color:hsl(0, 0%, 95%);
+    text-decoration: none;
+    padding:10px;
+    display: block;
+    text-align: center;
+    width:120px;
+    margin-top: 20px;
+}
+.btn:hover{
+    background-color:transparent;
+    outline: 2px solid white;
+    color: white;
+    transition: background-color .5s ease-in;
+}
+
+#sedanLm{
+    color:hsl(31, 77%, 52%);
+}
+#sedanLm:hover{
+    background-color: hsl(31, 77%, 52%);
+    color:hsl(0, 0%, 95%);
+    outline: 2px hsl(0, 0%, 95%) solid;
+}
+#suvLm{
+    color:hsl(184, 100%, 22%);
+}
+#suvLm:hover{
+    background-color: hsl(184, 100%, 22%);
+    color:hsl(0, 0%, 95%);
+    outline: 2px hsl(0, 0%, 95%) solid;
+}
+#luxuryLm{
+    color:hsl(179, 100%, 13%);
+}
+#luxuryLm:hover{
+    background-color:hsl(179, 100%, 13%) ;
+    color:hsl(0, 0%, 95%);
+    outline: 2px hsl(0, 0%, 95%) solid;
+}
+
+@media  screen and (max-width:480px) {
+    .main{
+        flex-direction: column;
+        width: 280px;
+    }
+}
